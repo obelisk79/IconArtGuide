@@ -60,7 +60,7 @@ Rectangular icons can fill either of the yellow zones shown above. Primary focus
 
 ## <u>Anatomy of a FreeCAD icon</u>
 
-![](/home/obelisk/anatomy.png)
+![](images/anatomy.png)
 
  
 
