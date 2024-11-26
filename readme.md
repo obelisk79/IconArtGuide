@@ -46,9 +46,9 @@ The following links describe underlying theory behind these guidelines:
 
 ## <u>Icon Template and Zones</u>
 
-![](images/template_zones.png)
+![](images/iconzones.png)
 
-Icons are designed on a 24 pixel grid. Shown above are the general size and placement areas for use. These are used to help provide consistency in size, form and area across icons.
+Icons are designed on a 24 pixel grid. Shown above are the general size and placement areas for use. These are used to help provide consistency in size, form and area across icons. Additionally, icons shall respect a 2px blockout perimiter leaving a 20px functional area for designs. Violations of this protected area should be minimal, uncommon, and accepted into the project only under rare circumstances.
 
    ‎
 
@@ -58,52 +58,48 @@ Rectangular icons can fill either of the yellow zones shown above. Primary focus
 
  
 
-Additionally, icons shall respect a 2px blockout perimiter. Violations of this protected area should be minimal, uncommon, and accepted into the project only under rare circumstances. This zone is visualized below:
+## <u>Anatomy of a FreeCAD icon</u>
 
-![](images/icon_blockout_zone.png)
+![](/home/obelisk/anatomy.png)
 
  
-
-#### Elements and terminology of a FreeCAD icon:
-
-![](images/icon_elements.png)
 
 1. **Outline** -- Icon outlines provide definition and contrast along the external perimiter of the icon and support visibility against different background colors.
 
 2. **Defining Line** -- used to provide form and definition to an icon.
 
-3. **Closed Shape** -- closed shapes in FreeCAD icons should utilize a fill color.
+3. **Closed Shape** -- closed shapes in FreeCAD icons should utilize a solid fill color.
 
 4. **Action Area** -- These typically use complementary shades of a primary palette color to accentuate the purpose/function represented.
 
-5. **Gradient** -- provides depth and visual tie-in between 2D and 3D icon symbols.
+5. **Gradient** -- provides subtle depth and visual connection between 2D and 3D icon symbols.
 
  
 
-#### Design rules for icon elements
+### Design rules for icon elements
 
-**Outline:**
+#### Outline:
 
-- Outline will be 1.0px in thickness, this can be drawn using paths or stroke. (Paths are preferred)
+- Outline shall be 1.0px in thickness, this can be drawn using a path based shape or stroke outline. (shape based are preferred)
 
-- Outline will fully cover the perimiter wherever the background meets edges of the icon.
+- Outline shall fully cover the perimiter wherever the background meets edges of the icon.
 
-**Closed Shapes:**
+#### Defining Lines:
+
+- Defining lines add visual clarity and necessary detail for icons. For 3D icons defining lines of the 'contrast' shade of the respective color should be used and be drawn at 0.5px thickness. For 2D (ie flat) icons, defining lines should use the perimiter color and a 1.0px thickness is preferred.
+- For line icons, use the 'neutral' gray with a 2.0px weight and modify the Outline rule to 1.0px.
+
+#### Closed Shapes:
 
 - Closed shapes will have a color fill. The palette includes 3 shades of each color to allow for a shading effect. Icons not representing 3D objects will use the 'neutral' shade of the respective color.
 
 - Closed shapes should not use color gradients.
 
-**Defining Lines:**
-
-- Defining lines add visual clarity and necessary detail for icons. For 3D icons defining lines of the 'contrast' shade of the respective color should be used and be drawn at 0.5px thickness. For 2D (ie flat) icons, defining lines should use the perimiter color and a 1.0px thickness is preferred.
-- For line icons, use the 'neutral' gray with a 2.0px weight and modify the Outline rule to 1.0px.
-
-**Action Area:**
+#### Action Area:
 
 - This is a color splash used to accent, but not define the purpose of a function. Mixing multiple base colors (ie green and red tones together) in a single icon should be avoided wherever possible.
 
-**Gradient:**
+#### Gradient:
 
 - The gradient shall only be applied using an outline of the icon shape. This provides visual connectedness between 2D and 3D icon elements by adding subtle depth.
 
@@ -111,13 +107,30 @@ Additionally, icons shall respect a 2px blockout perimiter. Violations of this p
 
  
 
-#### 3D perspective icons:
+### 3D Perspective Icons:
 
 - 3D perspectives should only be used for functions not easily indicated by a simple 2D shape.
 
 - 3D icons will be drawn using an axonometric grid. This grid is present, but disabled through the document properties in Inkscape. Axonometric grid parameters are as follows: Spacing Y = 1.0; Angle X = 33.0; Angle Z = 6.5.
 
 - Lighting/Shading shall assume a light position of above-right in relation to the icon object.
+
+ 
+
+### 2D Perspective Icons:
+
+* 2D icons shall have no percieved shading outside of the prescribed gradient above.
+
+* 2D icons shall only use the 'primary' shade of any color from the palette.
+
+* 2D icons should restrict themselves to one or two colors following the same approach of a gray color with the addition of a single action color as needed.
+
+ 
+
+### 2D Line Art Icons:
+
+* Line Art icons are an exception, they represent functions that only work on lines or curves. They are not easily represented with a standard closed shape or 
+* Outline requirements convey to such icons to ensure portability across different colored backgrounds.
 
  
 
