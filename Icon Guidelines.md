@@ -103,7 +103,9 @@ Rectangular icons can fill either of the yellow zones shown above. Primary focus
 
 - The gradient must only be applied using an outline of the icon shape. This provides visual connectedness between 2D and 3D icon elements by adding subtle depth.
 
-- The gradient will transition vertically from bottom to top using the outline color to the white tone(set to 0% transparency). The gradient white color must have a stop offset of 0.5 (or 50%).
+- The gradient will transition vertically from bottom to top of the actual graphic using the outline color to the highight grey color(alpha channel set to 0%). The gradient white color must have a stop offset of 0.5 (or center of the graphic).
+
+- Overall transparency for the final gradient shall be set to 25% opacity.
 
  
 
